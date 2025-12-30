@@ -1,9 +1,131 @@
-<div class="meta">
-  <span>Charlotte, NC</span>
-  <span>•</span>
-  <a href="mailto:vnspranathireddyjanapala@gmail.com">vnspranathireddyjanapala@gmail.com</a>
-  <span>•</span>
-  <a href="https://linkedin.com/in/pranathi-janapala" target="_blank" rel="noopener">LinkedIn</a>
-  <span>•</span>
-  <a href="https://github.com/PRANATHIJANAPALA" target="_blank" rel="noopener">GitHub</a>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pranathi Reddy Janapala | Design Verification</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif; margin:0; background:#fff; color:#111;}
+    .wrap{max-width:900px; margin:0 auto; padding:28px 18px;}
+    h1{margin:0 0 8px; font-size:28px;}
+    .top{display:flex; flex-wrap:wrap; gap:10px; color:#444; font-size:14px; margin-bottom:18px;}
+    a{color:#0b57d0; text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .section{margin-top:18px;}
+    .section h2{font-size:16px; margin:0 0 8px; border-bottom:1px solid #ddd; padding-bottom:6px;}
+    .card{border:1px solid #e6e6e6; border-radius:10px; padding:14px; margin-top:10px;}
+    .role{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+    .role b{font-size:14px;}
+    .muted{color:#666; font-size:13px;}
+    ul{margin:8px 0 0 18px;}
+    li{margin:4px 0;}
+    .pill{display:inline-block; border:1px solid #d9d9d9; border-radius:999px; padding:5px 10px; margin:4px 6px 0 0; font-size:12px; background:#fafafa;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Venkata Naga Sai Pranathi Reddy Janapala</h1>
+    <div class="top">
+      <span>Charlotte, NC</span>
+      <span>|</span>
+      <a href="mailto:vnspranathireddyjanapala@gmail.com">vnspranathireddyjanapala@gmail.com</a>
+      <span>|</span>
+      <span>+1 (980) 721-2142</span>
+      <span>|</span>
+      <a href="https://linkedin.com/in/pranathi-janapala" target="_blank" rel="noopener">LinkedIn</a>
+      <span>|</span>
+      <a href="https://github.com/PRANATHIJANAPALA" target="_blank" rel="noopener">GitHub</a>
+      <span>|</span>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener">PDF Resume</a>
+    </div>
+
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <div class="card">
+        Design Verification Engineer with 1+ year of ASIC DV experience building UVM testbenches,
+        SystemVerilog Assertions (SVA), and coverage-driven verification for AMBA/DDR-class interfaces.
+        Proven record of owning regression stability, driving coverage closure, and closing protocol/spec
+        compliance gaps by isolating root-cause RTL defects and preventing escape issues through
+        assertion-based and constrained-random verification.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+
+      <div class="card">
+        <div class="role">
+          <b>Graduate Assistant — ASIC / RTL Verification, University of North Carolina at Charlotte</b>
+          <span class="muted">Aug 2024 – Present • Charlotte, NC</span>
+        </div>
+        <ul>
+          <li>Owned end-to-end verification of a 1×3 packet router; built UVM components (driver, monitor, scoreboard, sequencer) and functional coverage for signoff readiness.</li>
+          <li>Drove +20% coverage closure and uncovered 15 critical RTL defects impacting arbitration and FIFO flow control.</li>
+          <li>Reduced debug turnaround by 30% using repeatable triage (assertions + scoreboard mismatches + waveform analysis), stabilizing regressions.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="role">
+          <b>Design Verification Engineer, Synaptics</b>
+          <span class="muted">Aug 2023 – Feb 2024 • Hyderabad, India</span>
+        </div>
+        <ul>
+          <li>Closed I²C controller IP compliance gaps using SVA checks and constrained-random testing across 100/400 kbps modes, preventing protocol escapes.</li>
+          <li>Improved regression quality by +35% coverage through parameterized UVM agents (multi-master arbitration, clock stretching) and spec-aligned corner cases.</li>
+          <li>Unblocked integration by partnering with design to root-cause RTL issues and validating fixes via clean regressions.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="role">
+          <b>Design Verification Engineer, SummitRT Solutions</b>
+          <span class="muted">Feb 2023 – Jul 2023 • Hyderabad, India</span>
+        </div>
+        <ul>
+          <li>Owned AMBA AXI3 and AXI-Lite verification plan and execution; implemented burst, ID, ordering, and response checks prior to subsystem handoff.</li>
+          <li>Achieved 88% functional coverage using directed tests for hard-to-hit scenarios aligned to protocol specifications.</li>
+          <li>Stabilized regressions by triaging intermittent failures and tightening checker alignment to spec.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="card">
+        <ul>
+          <li><b>DDR3 Controller DV:</b> Built UVM environment with behavioral DRAM model; validated refresh, timing windows, and ordering corner cases.</li>
+          <li><b>Protocol Verification (AXI/AHB/APB):</b> Developed 25+ constrained-random sequences and protocol checkers using assertions + scoreboards.</li>
+          <li><b>AXI4-Lite Router (1×3):</b> Designed UVM testbench and coverage model; generated 50+ tests including boundary and negative routing cases.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <div class="card">
+        <div>
+          <span class="pill">UVM</span>
+          <span class="pill">SystemVerilog</span>
+          <span class="pill">SVA</span>
+          <span class="pill">Coverage Closure</span>
+          <span class="pill">Regression Triage</span>
+          <span class="pill">AXI/AXI-Lite</span>
+          <span class="pill">AHB/APB</span>
+          <span class="pill">I²C</span>
+          <span class="pill">DDR3/DDR4</span>
+          <span class="pill">VCS</span>
+          <span class="pill">Verdi</span>
+          <span class="pill">Questa</span>
+          <span class="pill">Xcelium</span>
+          <span class="pill">JasperGold</span>
+          <span class="pill">Python</span>
+          <span class="pill">Tcl</span>
+          <span class="pill">Linux</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
