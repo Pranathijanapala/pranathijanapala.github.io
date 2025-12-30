@@ -3,23 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pranathi Reddy Janapala | Design Verification</title>
+  <title>Pranathi Reddy Janapala | ASIC Design Verification</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif; margin:0; background:#fff; color:#111;}
-    .wrap{max-width:900px; margin:0 auto; padding:28px 18px;}
-    h1{margin:0 0 8px; font-size:28px;}
-    .top{display:flex; flex-wrap:wrap; gap:10px; color:#444; font-size:14px; margin-bottom:18px;}
-    a{color:#0b57d0; text-decoration:none;}
-    a:hover{text-decoration:underline;}
-    .section{margin-top:18px;}
-    .section h2{font-size:16px; margin:0 0 8px; border-bottom:1px solid #ddd; padding-bottom:6px;}
-    .card{border:1px solid #e6e6e6; border-radius:10px; padding:14px; margin-top:10px;}
-    .role{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;}
-    .role b{font-size:14px;}
-    .muted{color:#666; font-size:13px;}
-    ul{margin:8px 0 0 18px;}
-    li{margin:4px 0;}
-    .pill{display:inline-block; border:1px solid #d9d9d9; border-radius:999px; padding:5px 10px; margin:4px 6px 0 0; font-size:12px; background:#fafafa;}
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#ffffff;color:#0b1220;}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px;}
+    h1{margin:0 0 6px;font-size:30px;line-height:1.15;}
+    .top{display:flex;flex-wrap:wrap;gap:10px;color:#4b5565;font-size:14px;margin-bottom:18px}
+    a{color:#1d4ed8;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .kicker{display:inline-block;color:#0f766e;font-weight:700;margin:8px 0 12px;font-size:14px}
+    .section{margin-top:18px}
+    .section h2{font-size:16px;margin:0 0 10px;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;margin-top:10px;background:#fff;box-shadow:0 10px 22px rgba(15,23,42,.06)}
+    .muted{color:#4b5565;font-size:13px}
+    .role{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+    ul{margin:8px 0 0 18px}
+    li{margin:4px 0}
+    .pill{display:inline-block;border:1px solid #e5e7eb;border-radius:999px;padding:5px 10px;margin:6px 6px 0 0;font-size:12px;background:#f8fafc}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -39,6 +41,8 @@
       <a href="assets/resume.pdf" target="_blank" rel="noopener">PDF Resume</a>
     </div>
 
+    <div class="kicker">ASIC / RTL Design Verification • UVM • SVA • AMBA • DDR</div>
+
     <div class="section">
       <h2>Professional Summary</h2>
       <div class="card">
@@ -55,7 +59,7 @@
 
       <div class="card">
         <div class="role">
-          <b>Graduate Assistant — ASIC / RTL Verification, University of North Carolina at Charlotte</b>
+          <b>Graduate Assistant — ASIC / RTL Verification, UNC Charlotte</b>
           <span class="muted">Aug 2024 – Present • Charlotte, NC</span>
         </div>
         <ul>
@@ -92,11 +96,28 @@
 
     <div class="section">
       <h2>Projects</h2>
-      <div class="card">
+      <div class="grid">
+        <div class="card">
+          <b>DDR3 Controller DV (Behavioral DRAM Model)</b>
+          <ul>
+            <li>Built UVM environment with behavioral DRAM model (4-bank).</li>
+            <li>Validated refresh, timing windows, and protocol ordering corner cases.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <b>Protocol Verification (AXI/AHB/APB)</b>
+          <ul>
+            <li>Developed 25+ constrained-random sequences and protocol checkers.</li>
+            <li>Validated burst handling, backpressure, and response scenarios.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <b>AXI4-Lite Router (1×3)</b>
         <ul>
-          <li><b>DDR3 Controller DV:</b> Built UVM environment with behavioral DRAM model; validated refresh, timing windows, and ordering corner cases.</li>
-          <li><b>Protocol Verification (AXI/AHB/APB):</b> Developed 25+ constrained-random sequences and protocol checkers using assertions + scoreboards.</li>
-          <li><b>AXI4-Lite Router (1×3):</b> Designed UVM testbench and coverage model; generated 50+ tests including boundary and negative routing cases.</li>
+          <li>Designed UVM testbench and coverage model; generated 50+ routing tests.</li>
+          <li>Validated boundary and negative cases to improve regression robustness.</li>
         </ul>
       </div>
     </div>
@@ -110,8 +131,8 @@
           <span class="pill">SVA</span>
           <span class="pill">Coverage Closure</span>
           <span class="pill">Regression Triage</span>
-          <span class="pill">AXI/AXI-Lite</span>
-          <span class="pill">AHB/APB</span>
+          <span class="pill">AXI / AXI-Lite</span>
+          <span class="pill">AHB / APB</span>
           <span class="pill">I²C</span>
           <span class="pill">DDR3/DDR4</span>
           <span class="pill">VCS</span>
